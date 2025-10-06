@@ -102,17 +102,38 @@
 
 			<h3 class="title-modal">Ajout photo</h3>
 
-			<form action="#" method="post">
-				<label for="title">Titre </label>
+
+			<div class="zone-photos">
+				<div class="zone-photos-icone">
+
+					<i class="fa-regular fa-image"></i>
+				</div>
+				<img class="" id="affiche-image" alt="">
+				<label id="inserer-photo">
+					<input type="file" id="file" accept="image/png, image/jpg">
+					+ Ajouter photos
+				</label>
+				<small id="info-format">jpg, png : 4mo max</small>
+
+
+			</div>
+
+			<form class="champs-photos" action="#" method="post">
+				<label for="titre-photo">Titre </label>
 				<input type="text" name="titre" id="titre-photo">
+
+
 
 				<label for="category">Catégorie </label>
 				<select name="category" id="category">
 					<option value=""></option>
 				</select>
 
+
 				<div class="ligne"></div>
-				<input class="ajout-photo" type="submit" value="Valider" disabled>
+				<input class="ajout-photo valider" type="submit" value="Valider" disabled>
+				<p id="erreur"></p>
+				<p id="succes"></p>
 			</form>
 		</div>
 

@@ -14,6 +14,7 @@ npm install
 Une fois les dépendances installées lancez le projet avec la commande 
 ```bash 
 npm start
+
 ```
 
 **Laisser tourner ce terminal pour travailler**
